@@ -5,6 +5,8 @@
 
   document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);  
 
+ 
+
   //manages mobile nav 
   function myFunction() {
       var x = document.getElementById("myTopnav");
@@ -14,4 +16,7 @@
           x.className = "topnav";
       }
   } 
-
+ 
+  let myDate = new Date();
+  let myYear = myDate.getFullYear();
+  document.getElementById("copyright").innerHTML = myYear;
